@@ -2,8 +2,59 @@
 <html>
 <head>
     <title>S1103502</title>
+  <head>
+    <title>My Website</title>
     <style>
-        /* other styles */
+      /* This is a CSS comment */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #262626;
+        color: white;
+        padding: 1em;
+      }
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      header nav ul li {
+        margin-right: 1em;
+      }
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      section {
+        padding: 2em;
+      }
+      #home {
+        background-color: #f2f2f2;
+      }
+      #about {
+        background-color: #e6e6e6;
+      }
+      #services {
+        background-color: #f2f2f2;
+      }
+      #contact {
+        background-color: #e6e6e6;
+      }
+      footer {
+        background-color: #262626;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+      .my-image{
+        width: 300px;
+        height: 200px;
+      }
+
     </style>
     <script>
         let images = ["image-motorcycle-home-supersport-link-2023-081022.jpg","https://s1103502.github.io/image-motorcycle-home-supersport-link-2023-081022.jpg","https://s1103502.github.io/image-motorcycle-home-supersport-link-2023-081022.jpg","https://s1103502.github.io/image-motorcycle-home-supersport-link-2023-081022.jpg"];
@@ -36,7 +87,7 @@
             </ul>
         </nav>
     </header>
-    <img id="image">
+    <img id="image" class="my-image">
     <footer>
         <p>Copyright ©2022 My Website</p>
     </footer>
