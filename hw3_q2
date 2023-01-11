@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Mask Example</title>
+    <script>
+      function validateFirstInput(input) {
+        if (input.value.length > 12) {
+          input.value = input.value.slice(0, 12);
+        }
+      }
 
+      function addDollarSymbol(input) {
+          input.value = parseFloat(input.value).toLocaleString("en-US", { style: "currency", currency: "USD" });
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="first-input">First Input:</label>
+      <input type="text" id="first-input" oninput="validateFirstInput(this)" />
+      <br />
+      <label for="second-input">Second Input:</label>
+      <input type="text" id="second-input" onfocus="addDollarSymbol(this)" />
+    </form>
+  </body>
+</html>
